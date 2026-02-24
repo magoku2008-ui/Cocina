@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocina de Carmen</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7b1e1e">
+
+<style>
+body{
+  font-family: Georgia, serif;
+  background:#f4efe6;
+  padding:20px;
+  margin:0;
+}
+header{
+  text-align:center;
+  background:#7b1e1e;
+  color:white;
+  padding:20px;
+}
+button{
+  padding:12px 18px;
+  background:#7b1e1e;
+  color:white;
+  border:none;
+  border-radius:8px;
+  margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍷 Cocina de Carmen</h1>
+  <p>Carta Digital</p>
+</header>
+
+<h2>Bienvenido a la App Oficial</h2>
+<p>Tu carta digital instalada en el móvil.</p>
+
+<button onclick="alert('App funcionando correctamente')">
+Probar App
+</button>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
